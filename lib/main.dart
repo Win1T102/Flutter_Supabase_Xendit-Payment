@@ -4,15 +4,31 @@ import 'config/app_config.dart';
 import 'screens/product_list_screen.dart';
 
 Future<void> main() async {
-  // Ensures Flutter is ready before calling async code like Supabase.initialize
   WidgetsFlutterBinding.ensureInitialized();
 
-  await Supabase.initialize(
-    url: AppConfig.supabaseUrl,
-    anonKey: AppConfig.supabaseAnonKey,
-  );
-
-  runApp(const StudentEcommerceApp());
+  try {
+    await Supabase.initialize(
+      url: AppConfig.supabaseUrl,
+      anonKey: AppConfig.supabaseAnonKey,
+    );
+    runApp(const StudentEcommerceApp());
+  } catch (e) {
+    // Catch the error and display it as red text on the phone screen
+    runApp(MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Text(
+              'Initialization failed:\n$e',
+              style: const TextStyle(color: Colors.red, fontSize: 16),
+              textAlign: TextAlign.center,
+            ),
+          ),
+        ),
+      ),
+    ));
+  }
 }
 
 class StudentEcommerceApp extends StatelessWidget {
