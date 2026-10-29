@@ -1,1 +1,184 @@
-# student_shop
+# Flutter_Supabase_Xendit-Payment
+
+![GitHub stars](https://img.shields.io/github/stars/Win1T102/Flutter_Supabase_Xendit-Payment?style=for-the-badge&logo=github) ![GitHub forks](https://img.shields.io/github/forks/Win1T102/Flutter_Supabase_Xendit-Payment?style=for-the-badge&logo=github) ![GitHub issues](https://img.shields.io/github/issues/Win1T102/Flutter_Supabase_Xendit-Payment?style=for-the-badge&logo=github) ![Last commit](https://img.shields.io/github/last-commit/Win1T102/Flutter_Supabase_Xendit-Payment?style=for-the-badge&logo=github)
+
+## 📑 Table of Contents
+
+- [Description](#description)
+- [Tech Stack](#tech-stack)
+- [Quick Start](#quick-start)
+- [Available Scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [Development Setup](#development-setup)
+- [Contributors](#contributors)
+- [Contributing](#contributing)
+
+## 📝 Description
+
+Flutter_Supabase_Xendit-Payment — a mobile app built with Android (Native), Flutter, Java (Gradle), Kotlin, iOS (Native).
+
+## 🛠️ Tech Stack
+
+![Android (Native)](https://img.shields.io/badge/Android%20(Native)-3DDC84?style=for-the-badge&logo=android&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white) ![Java (Gradle)](https://img.shields.io/badge/Java%20(Gradle)-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white) ![iOS (Native)](https://img.shields.io/badge/iOS%20(Native)-000000?style=for-the-badge&logo=apple&logoColor=white)
+
+## ⚡ Quick Start
+
+```bash
+
+# 1. Clone the repository
+git clone https://github.com/Win1T102/Flutter_Supabase_Xendit-Payment.git
+
+# Get packages and run
+flutter pub get && flutter run
+```
+
+## 🚀 Available Scripts
+
+- **run** — `flutter run`
+- **test** — `flutter test`
+
+## 📁 Project Structure
+
+```
+.
+├── analysis_options.yaml
+├── lib
+│   ├── config
+│   │   └── app_config.dart
+│   ├── main.dart
+│   ├── models
+│   │   └── product_model.dart
+│   ├── screens
+│   │   ├── orders_screen.dart
+│   │   ├── product_list_screen.dart
+│   │   └── xendit_webview_screen.dart
+│   └── services
+│       └── payment_service.dart
+├── linux
+│   ├── CMakeLists.txt
+│   ├── flutter
+│   │   ├── CMakeLists.txt
+│   │   ├── generated_plugin_registrant.cc
+│   │   ├── generated_plugin_registrant.h
+│   │   └── generated_plugins.cmake
+│   └── runner
+│       ├── CMakeLists.txt
+│       ├── main.cc
+│       ├── my_application.cc
+│       └── my_application.h
+├── macos
+│   ├── Flutter
+│   │   ├── Flutter-Debug.xcconfig
+│   │   ├── Flutter-Release.xcconfig
+│   │   └── GeneratedPluginRegistrant.swift
+│   ├── Runner
+│   │   ├── AppDelegate.swift
+│   │   ├── Assets.xcassets
+│   │   │   └── AppIcon.appiconset
+│   │   │       ├── Contents.json
+│   │   │       ├── app_icon_1024.png
+│   │   │       ├── app_icon_128.png
+│   │   │       ├── app_icon_16.png
+│   │   │       ├── app_icon_256.png
+│   │   │       ├── app_icon_32.png
+│   │   │       ├── app_icon_512.png
+│   │   │       └── app_icon_64.png
+│   │   ├── Base.lproj
+│   │   │   └── MainMenu.xib
+│   │   ├── Configs
+│   │   │   ├── AppInfo.xcconfig
+│   │   │   ├── Debug.xcconfig
+│   │   │   ├── Release.xcconfig
+│   │   │   └── Warnings.xcconfig
+│   │   ├── DebugProfile.entitlements
+│   │   ├── Info.plist
+│   │   ├── MainFlutterWindow.swift
+│   │   └── Release.entitlements
+│   ├── Runner.xcodeproj
+│   │   ├── project.pbxproj
+│   │   ├── project.xcworkspace
+│   │   │   └── xcshareddata
+│   │   │       └── IDEWorkspaceChecks.plist
+│   │   └── xcshareddata
+│   │       └── xcschemes
+│   │           └── Runner.xcscheme
+│   ├── Runner.xcworkspace
+│   │   ├── contents.xcworkspacedata
+│   │   └── xcshareddata
+│   │       └── IDEWorkspaceChecks.plist
+│   └── RunnerTests
+│       └── RunnerTests.swift
+├── pubspec.lock
+├── pubspec.yaml
+├── test
+│   └── widget_test.dart
+├── web
+│   ├── favicon.png
+│   ├── icons
+│   │   ├── Icon-192.png
+│   │   ├── Icon-512.png
+│   │   ├── Icon-maskable-192.png
+│   │   └── Icon-maskable-512.png
+│   ├── index.html
+│   └── manifest.json
+└── windows
+    ├── CMakeLists.txt
+    ├── flutter
+    │   ├── CMakeLists.txt
+    │   ├── generated_plugin_registrant.cc
+    │   ├── generated_plugin_registrant.h
+    │   └── generated_plugins.cmake
+    └── runner
+        ├── CMakeLists.txt
+        ├── Runner.rc
+        ├── flutter_window.cpp
+        ├── flutter_window.h
+        ├── main.cpp
+        ├── resource.h
+        ├── resources
+        │   └── app_icon.ico
+        ├── runner.exe.manifest
+        ├── utils.cpp
+        ├── utils.h
+        ├── win32_window.cpp
+        └── win32_window.h
+```
+
+## 🛠️ Development Setup
+
+### Flutter
+1. Install the [Flutter SDK](https://flutter.dev/docs/get-started/install)
+2. `flutter pub get && flutter run`
+
+## 👥 Contributors
+
+Thanks to everyone who has contributed to this project:
+
+<p align="left">
+<a href="https://github.com/Win1T102" title="Win1T102"><img src="https://avatars.githubusercontent.com/u/203738107?v=4&s=64" width="64" height="64" alt="Win1T102" style="border-radius:50%" /></a>
+</p>
+
+[See the full list of contributors →](https://github.com/Win1T102/Flutter_Supabase_Xendit-Payment/graphs/contributors)
+
+## 👥 Contributing
+
+Contributions are welcome! Here's the standard flow:
+
+1. **Fork** the repository
+2. **Clone** your fork: `git clone https://github.com/Win1T102/Flutter_Supabase_Xendit-Payment.git`
+3. **Branch**: `git checkout -b feature/your-feature`
+4. **Commit**: `git commit -m 'feat: add some feature'`
+5. **Push**: `git push origin feature/your-feature`
+6. **Open** a pull request
+
+Please follow the existing code style and include tests for new behavior where applicable.
+
+---
+
+<div align="center">
+
+[![Made with ReadmeBuddy](https://img.shields.io/badge/Made%20with-ReadmeBuddy-8B5CFF?style=for-the-badge&logo=markdown&logoColor=white)](https://readmebuddy.com)
+
+<sub>Generate beautiful READMEs in seconds → <a href="https://readmebuddy.com">readmebuddy.com</a></sub>
+
+</div>
